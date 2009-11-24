@@ -1,0 +1,31 @@
+[ui]
+username = Josh Price <joshcp@gmail.com>
+
+[extensions]
+color =
+pager =
+hgext.graphlog =
+hgext.mq =
+
+[pager]
+pager = LESS='FSRX' less
+ignore = version, help, push, pull, clone, update
+
+[color]
+status.modified = magenta bold
+status.added = green bold
+status.removed = red bold
+status.deleted = cyan bold
+status.unknown = yellow bold
+status.ignored = black bold
+
+diff.diffline = bold
+diff.extended = cyan bold
+diff.file_a = red bold
+diff.file_b = green bold
+diff.hunk = magenta
+diff.deleted = red
+diff.inserted = green
+diff.changed = white
+diff.trailingwhitespace = bold red_background
+

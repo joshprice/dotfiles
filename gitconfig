@@ -1,0 +1,20 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[user]
+  name = Josh Price
+  email = joshcp@gmail.com
+[apply]
+  whitespace = nowarn
+[alias]
+  co = checkout
+  st = status
+  ci = commit
+  di = diff
+  l = log
+[core]
+  excludesfile = 
+[branch]
+  autosetupmerge = true
+
