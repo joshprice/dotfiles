@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+CVS
+.svn
+*.class
+*.iws

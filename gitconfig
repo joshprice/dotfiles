@@ -1,7 +1,5 @@
 [color]
-  diff = auto
-  status = auto
-  branch = auto
+  ui = auto
 [user]
   name = Josh Price
   email = joshcp@gmail.com
@@ -13,8 +11,10 @@
   ci = commit
   di = diff
   l = log
+  sb = show-branch
 [core]
-  excludesfile = 
+  excludesfile = /Users/josh/dotfiles/gitignore
 [branch]
   autosetupmerge = true
-
+[showbranch]
+  default = --all
