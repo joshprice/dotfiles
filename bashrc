@@ -1,1 +1,1 @@
-PATH=$PATH:~/homebrew/bin:.
+export PATH=$PATH:~/homebrew/bin:.:/usr/local/mysql/bin
