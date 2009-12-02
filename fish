@@ -1,6 +1,6 @@
 
 function ls
-	ls -laF $argv
+  ls -laF $argv
 end
 
 function ss
