@@ -4,9 +4,7 @@
 
 # export PS1='\u@\h:\[\e[33;40m\]\w \[\e[34;1m\]$(__git_ps1 "(%s) ")\[\e[33;1m\]\$ \[\e[0m\]'
 
-# MacPorts
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH
-export MANPATH=/opt/local/share/man:$MANPATH
+export PATH=/usr/local/bin:/usr/local/mysql/bin:$PATH
 
 # Rails
 alias sg='script/generate'
