@@ -6,6 +6,7 @@
 [apply]
   whitespace = nowarn
 [alias]
+  up = pull --rebase
   co = checkout
   st = status
   ci = commit
