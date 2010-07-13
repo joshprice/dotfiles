@@ -14,7 +14,7 @@
   l = log
   sb = show-branch
 [core]
-  excludesfile = /Users/josh/dotfiles/gitignore
+  excludesfile = ~/.gitignore
 [branch]
   autosetupmerge = true
 [showbranch]
