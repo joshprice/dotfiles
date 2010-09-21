@@ -6,6 +6,8 @@ color =
 pager =
 hgext.graphlog =
 hgext.mq =
+hgext.bookmarks =
+hggit =
 
 [pager]
 pager = LESS='FSRX' less
