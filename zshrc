@@ -17,7 +17,7 @@ export ZSH_THEME="josh"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git heroku osx rails ruby textmate)
+plugins=(git heroku osx rails ruby textmate brew lighthouse)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -61,7 +61,7 @@ alias gin='git log master..origin/master'
 # Projects
 alias pr='cd ~/Dropbox/projects'
 alias times='cd ~/Dropbox/projects/timerobot'
-alias rm='cd ~/Dropbox/projects/sm/rate_compare/rateminder'
+#alias rm='cd ~/Dropbox/projects/sm/rate_compare/rateminder'
 alias bb='cd ~/Dropbox/projects/sm/thebookingbutton'
 alias sm='cd ~/Dropbox/projects/sm'
 
