@@ -1,69 +1,63 @@
 # Path to your oh-my-zsh configuration.
-export ZSH=$HOME/.oh-my-zsh
+ZSH=$HOME/.oh-my-zsh
 
-# Set to the name theme to load.
+# Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="josh"
-#export ZSH_THEME="gallifrey"
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="josh"
+
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
-# export CASE_SENSITIVE="true"
+# CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
-# export DISABLE_AUTO_UPDATE="true"
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment following line if you want to disable colors in ls
-# export DISABLE_LS_COLORS="true"
+# DISABLE_LS_COLORS="true"
+
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+# COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git heroku osx rails ruby textmate brew lighthouse)
-
+plugins=(git rails3 bundler heroku gem rake rvm)
 
 source $ZSH/oh-my-zsh.sh
 
+# turn off the autocorrect for everything
+unsetopt correct_all
+
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/josh/.rvm/gems/ruby-1.8.7-p299/bin:/Users/josh/.rvm/gems/ruby-1.8.7-p299@global/bin:/Users/josh/.rvm/rubies/ruby-1.8.7-p299/bin:/Users/josh/.rvm/bin:/usr/local/mysql/bin
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
-# misc
-alias ls='ls -la'
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-# hmm pesky autocorrect...
-alias bundle='nocorrect bundle'
- 
-# Rails
-alias sg='script/generate'
-alias sc='script/console'
-alias ss='script/server'
+# Directory listings with all the info, hidden files and wonderful color (-G)
+alias ls='ls -lasFG'
 
-alias sg='script/generate'
-alias sc='script/console'
-alias ss='script/server'
+# Sublime text 2
+alias st='subl'
+alias stn='st -n .'
 
+# Rails: Some custom stuff not in the rails3 plugin
 alias rs='rake spec'
+alias rdbm='rake db:migrate'
 
-# Git
+# Git: Some custom stuff not in the git plugin
 alias gs='git status'
 alias gd='git diff'
-alias gb='git branch'
-alias gc='git commit'
-alias gl='git log'
 
-alias gba='git branch -a'
 alias gcv='git cherry -v'
-alias gup='git pull'
-alias gupr='git pull --rebase'
-alias gp='git push'
+alias gpr='git pull --rebase'
 alias gpom='git push origin master'
 alias gout='git log origin/master..master'
 alias gin='git log master..origin/master'
-
-# Projects
-alias pr='cd ~/Dropbox/projects'
-alias times='cd ~/Dropbox/projects/timerobot'
-#alias rm='cd ~/Dropbox/projects/sm/rate_compare/rateminder'
-alias bb='cd ~/Dropbox/projects/sm/thebookingbutton'
-alias sm='cd ~/Dropbox/projects/sm'
-
-# rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
