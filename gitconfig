@@ -2,7 +2,7 @@
   ui = auto
 [user]
   name = Josh Price
-  email = joshcp@gmail.com
+  email = josh@canoniq.com
 [apply]
   whitespace = nowarn
 [alias]
@@ -21,3 +21,5 @@
   default = --all
 [github]
 	user = joshprice
+[credential]
+  helper = osxkeychain
