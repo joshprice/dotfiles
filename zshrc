@@ -41,7 +41,7 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-# Directory listings with all the info, hidden files and wonderful color (-G)
+# Directory listings with all the info, hidden files and color (-G although this used to be on by default... :/)
 alias ls='ls -lasFG'
 
 # Sublime text 2
@@ -51,6 +51,7 @@ alias stn='st -n .'
 # Rails: Some custom stuff not in the rails3 plugin
 alias rs='rake spec'
 alias rdbm='rake db:migrate'
+alias fs='foreman start'
 
 # Git: Some custom stuff not in the git plugin
 alias gs='git status'
